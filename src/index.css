@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.app {
+  margin-top: 30px;
+  height: 70vh;
+  width: 70vw;
+  min-width: 700px;
+  color: rgb(90, 90, 90);
+  box-shadow: 1px 1px 20px rgb(187, 187, 187);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*  Styling the add expense section */
+.add-expense-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  gap: 30px;
+}
+
+.item,
+.blc {
+  background-color: #ffffff;
+  text-align: center;
+  border: solid 1px rgba(200, 200, 200, 0.352);
+}
+
+.income-expense {
+  display: flex;
+  gap: 30px;
+}
+
+.blc,
+.income-expense > .item {
+  min-width: 150px;
+  padding: 0.5rem 1rem;
+}
+
+.app > * {
+  flex: 1;
+  padding: 1.6rem;
+  padding-top: 1.3rem;
+  height: 100%;
+
+  border: solid 1px gray;
+}
+
+.history-section {
+  overflow-y: scroll;
+}
+
+.no-transacs {
+  margin: 1rem 0;
+}
+
+input {
+  border: solid 1px rgba(200, 200, 200, 0.352);
+  outline: none;
+  width: 100%;
+  height: 40px;
+  padding: 0.7rem;
+}
+
+.user-input {
+  font-size: 0.9rem;
+}
+
+.add-expense-btn,
+.add-exp-amt {
+  cursor: pointer;
+  width: 80%;
+  border: solid 1px rgba(200, 200, 200, 0.352);
+  padding: 0.5rem 1rem;
+
+  background: none;
+}
+
+.add-exp-amt {
+  width: 50%;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Styling the transactions history section */
+
+.rec {
+  display: flex;
+  gap: 15px;
+
+  min-width: 250px;
+  max-width: 350px;
+  margin-top: 1.5rem;
+  padding: 0.4rem 0.7rem;
+}
+
+.rec button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.rec button:hover {
+  transition: transform 300ms;
+  transform: scale(1.1);
+}
+
+/* Making classes to hide the element as per the condtions */
+.hide {
+  display: none;
+}
+
+/* Making class for styling the income and expense */
+.earnings {
+  background-color: rgb(236, 236, 236);
+  color: rgb(90, 90, 90);
+}
+
+.spendings {
+  background-color: rgb(90, 90, 90);
+  color: rgb(236, 236, 236);
+}
